@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>Employ details</title>
+    </head>
+    <body>
+        {% for i in k %}
+        <table border="2">
+            <tr><th>EmpID</th><td>{{i.empid}}</td></tr>
+            <tr><th>EmpName</th><td>{{i.empname}}</td></tr>
+            <tr><th>Degignation</th><td>{{i.deg}}</td></tr>
+            <tr><th>Salary</th><td>{{i.salary}}</td></tr>
+            <tr><th>Email</th><td>{{i.email}}</td></tr>
+            <tr><th>Place</th><td>{{i.place}}</td></tr>
+            <tr><th>PhoneNo</th><td>{{i.phone}}</td></tr>
+            <tr><th>Photo</th><td>img src="{{i.photo.url}}"</td></tr>
+        </table>
+        {% endfor %}
+    </body>
+</html>
